@@ -57,7 +57,7 @@ section .description {
     align-items: center;
     box-sizing: border-box;
     padding:100px;
-    padding-bottom: 70px;
+    padding-bottom: 50px;
     text-align: center;
     box-shadow: 0px 0px 10px rgb(30, 30, 30);
     border-radius: 15px;
@@ -107,4 +107,120 @@ section .description {
 a .btn:hover{
     border: 2px solid black;
     box-sizing: border-box;
+}
+
+/*
+
+*/
+
+
+.body_area{
+    margin-top: 15px;
+    
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title_area h1{
+    margin-top: 10px;
+}
+
+.area_tl {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+.a_middle{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.a_left{
+    flex:5;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+}
+
+.a_right{
+    flex:5;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+.body_middle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ball {
+    background-color: rgb(113, 164, 212);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    
+}
+
+.line_one{
+    background-color: rgb(113, 164, 212);
+    width: 2px;
+    height: 40px;
+}
+.line_two{
+    background-color: rgb(113, 164, 212);
+    width: 2px;
+    height: 175px;
+}
+
+.box_left_1, .box_left_2, .box_right_1, .box_right_2{
+    width: 80%;
+    height: 200px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+}
+.box_left_1{
+    margin-top: 16px;
+    
+}
+
+.box_left_2{
+    margin-top: 55px;
+ 
+}
+
+.box_right_1{
+    margin-top: 75px;
+
+}
+.box_right_2{
+    margin-top: 55px;
+
+}
+
+.box_title_left, .box_title_right{
+    display: flex;
+    background-color: rgb(95, 95, 95);
+    padding-left: 15px;
+    height: 30px;
+    align-items: center;
+    color:white;
+}
+
+.box_title_left {
+    border-top-left-radius: 10px;
+}
+
+.box_title_right {
+    border-top-right-radius: 10px;
+}
+.text_box {
+    display: flex;
+    padding:20px;
+    box-sizing: border-box;
+    text-align: center;
 }
