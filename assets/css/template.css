@@ -182,24 +182,25 @@ a .btn:hover{
     height: 200px;
     background-color: rgb(230, 230, 230);
     border-radius: 10px;
+    
 }
 .box_left_1{
     margin-top: 16px;
-    
+    box-shadow: -3px 3px 10px rgb(30, 30, 30);
 }
 
 .box_left_2{
     margin-top: 55px;
- 
+    box-shadow: -3px 3px 10px rgb(30, 30, 30);
 }
 
 .box_right_1{
     margin-top: 75px;
-
+    box-shadow: 3px 3px 10px rgb(30, 30, 30);
 }
 .box_right_2{
     margin-top: 55px;
-
+    box-shadow: 3px 3px 10px rgb(30, 30, 30);
 }
 
 .box_title_left, .box_title_right{
@@ -209,15 +210,60 @@ a .btn:hover{
     height: 30px;
     align-items: center;
     color:white;
+    
+    
 }
 
+/* 
+    pesquisei no site (balão com CSS puro)
+    https://codepen.io/fernandaassis-dg/pen/VdXLBP
+*/
 .box_title_left {
     border-top-left-radius: 10px;
+    /* Position relative para a seta não exceder os limites do balão, 
+    já que vamos usar position absolute nele */
+    position: relative;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.box_title_left::after {
+    content:"";
+    width: 0px;
+    height: 0px;
+    position:absolute;
+    
+    right: -15px;
+    /*border-top: 20px solid transparent;*//* se apagar fica um triangulo de dois lados iguals*/
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid rgb(95, 95, 95); /* Defina 'right' para seta mudar de lado*/
+    border-radius: 0%;
+    margin-bottom: 15px;
+    
 }
 
 .box_title_right {
     border-top-right-radius: 10px;
+    position: relative;
+    padding-left: 10px;
+    box-sizing: border-box;
 }
+
+.box_title_right::after {
+    content:"";
+    width: 0px;
+    height: 0px;
+    position:absolute;
+    
+    left: -15px;
+    /*border-top: 20px solid transparent;*//* se apagar fica um triangulo de dois lados iguals*/
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid rgb(95, 95, 95); /* Defina 'right' para seta mudar de lado*/
+    border-radius: 0%;
+    margin-bottom: 15px;
+    
+}
+
 .text_box {
     display: flex;
     padding:20px;
